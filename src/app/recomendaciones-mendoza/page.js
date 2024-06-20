@@ -15,7 +15,7 @@ import serviciosIcon from "../../../public/images/servicios-icon.svg";
 import transporteIcon from "../../../public/images/transporte-icon.svg";
 import vuelosIcon from "../../../public/images/vuelos-icon.svg";
 
-export default function recomMdz() {
+export default function RecomMdz() {
   const [selectedTab, setSelectedTab] = useState("tab1");
   return (
     <section className="flex flex-col items-center bg-offWhite text-black">

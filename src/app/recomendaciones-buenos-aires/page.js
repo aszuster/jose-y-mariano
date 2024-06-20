@@ -17,7 +17,7 @@ import gastronomiaIcon from "../../../public/images/gastronomia-icon.svg";
 import quehacerBsAsIcon from "../../../public/images/quehacerbsas-icon.svg";
 import chevronDown from "../../../public/images/chevron-down.svg";
 
-export default function recomBsAs() {
+export default function RecomBsAs() {
   const [selectedTab, setSelectedTab] = useState("tab1");
   const [activeAccordion, setActiveAccordion] = useState(null);
 
