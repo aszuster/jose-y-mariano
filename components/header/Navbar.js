@@ -71,15 +71,15 @@ const Navbar = () => {
           </button>
           {dropdownOpen && (
             <div className="bg-mudGreenDark py-2">
-              <Link href="/service1">
+              <Link href="/recomendaciones-mendoza">
                 <p className="block text-[18px] font-light px-4 py-2 text-white my-5 tracking-[0.3em] uppercase">Mendoza</p>
               </Link>
-              <Link href="/service2">
+              <Link href="/recomendaciones-buenos-aires">
                 <p className="block text-[18px] font-light px-4 py-2 text-white my-5 tracking-[0.3em] uppercase">Buenos Aires</p>
               </Link>
             </div>
           )}
-          <Link href="/contact">
+          <Link href="/rsvp">
             <p className="block text-[18px] font-light px-4 py-2 uppercase text-mudGreenDark my-5 tracking-[0.3em]">RSVP</p>
           </Link>
         </div>
