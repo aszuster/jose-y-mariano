@@ -34,16 +34,16 @@ const Navbar = () => {
             </button>
             {dropdownOpen && (
               <div className="absolute bg-lightGray shadow-md mt-2 rounded-md px-[20px] py-[7px]">
-                <Link href="/service1">
+                <Link href="/recomendaciones-mendoza">
                   <p className="block text-[18px] font-light px-4 py-2 text-mudGreenDark my-3 tracking-[0.3em] uppercase">Mendoza</p>
                 </Link>
-                <Link href="/service2">
+                <Link href="/recomendaciones-buenos-aires">
                   <p className="block text-[18px] font-light px-4 py-2 text-mudGreenDark my-3 tracking-[0.3em] uppercase">Buenos Aires</p>
                 </Link>
               </div>
             )}
           </div>
-          <Link href="/contact">
+          <Link href="/rsvp">
             <p className="text-mudGreenDark uppercase text-lg tracking-[0.35em]">RSVP</p>
           </Link>
         </div>
