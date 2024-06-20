@@ -285,33 +285,33 @@ export default function RecomMdz() {
             className="mt-[19px] mb-[27px] lg:mb-[37px] w-[201px] lg:w-[392px]"
           />
           <Image src={serviciosIcon} className="mb-[10px] lg:mb-[7px]" />
-          <h5 className="text-[22px] uppercase leading-[27px] text-center tracking-[0.35em] lg:tracking-[0.4em] font-light lg:font-normal text-gray lg:max-w-[935px] lg:mb-[95px]">
+          <h5 className="text-[22px] uppercase leading-[27px] text-center tracking-[0.35em] lg:tracking-[0.4em] font-light lg:font-normal text-gray lg:max-w-[935px] mb-[24px] lg:mb-[95px]">
             Servicios
           </h5>
-          <div className="lg:flex lg:gap-x-[100px]">
-            <div>
-              <p className="font-semibold text-darkGray mb-[30px] lg:mb-[10px] mt-[20px] lg:mt-0 lg:uppercase lg:text-[22px] lg:tracking-[0.4em]">
+          <div className="lg:flex lg:gap-x-[100px] text-center">
+            <div className="mb-[30px] lg:mb-0 flex flex-col items-center">
+              <p className="font-bold text-darkGray mb-[10px] mt-[20px] lg:mt-0 uppercase lg:text-[22px] tracking-[0.3em] lg:tracking-[0.4em]">
                 Makeup
               </p>
-              <ul className="hidden lg:block text-[22px] leading-[35px] text-darkGray">
-                <li>. Luciana Oliva</li>
-                <li>. Paula Sáez</li>
-                <li>. Andrea Vargas</li>
-                <li>. Mucho peluquería </li>
-                <li>. Florencia Raviolo</li>
-                <li>. Sofi bauco</li>
+              <ul className="text-[16px] leading-[30px] lg:text-[22px] lg:leading-[35px] text-darkGray">
+                <li>Luciana Oliva</li>
+                <li>Paula Sáez</li>
+                <li>Andrea Vargas</li>
+                <li>Mucho peluquería </li>
+                <li>Florencia Raviolo</li>
+                <li>Sofi bauco</li>
               </ul>
             </div>
             <div>
-              <p className="font-semibold text-darkGray lg:uppercase lg:text-[22px] lg:tracking-[0.4em] lg:mb-[10px]">
+              <p className="font-bold text-darkGray uppercase lg:text-[22px] tracking-[0.3em] lg:tracking-[0.4em] mb-[10px]">
                 Peluquería
               </p>
-              <ul className="hidden lg:block text-[22px] leading-[35px] text-darkGray">
-                <li>. Mala peluquería Mendoza </li>
-                <li>. Mucho peluquería </li>
-                <li>. Luciana Oliva</li>
-                <li>. Sol Benegas</li>
-                <li>. Simona Espacios</li>
+              <ul className="text-[16px] leading-[30px] lg:text-[22px] lg:leading-[35px] text-darkGray">
+                <li>Mala peluquería Mendoza </li>
+                <li>Mucho peluquería </li>
+                <li>Luciana Oliva</li>
+                <li>Sol Benegas</li>
+                <li>Simona Espacios</li>
               </ul>
             </div>
           </div>
