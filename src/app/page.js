@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Preboda from "./preboda/page";
+import Countdown from "../../components/Countdown/Countdown";
 import Vector9 from "../../public/images/vector9.svg";
 import Vector19 from "../../public/images/vector19home.svg";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <h2 className="text-mudGreenDark tracking-[0.2em] font-semibold text-[17px] lg:text-[22px] leading-[17px] lg:leading-[22px] mb-[54px] animate-slidein300 opacity-0">23 . 11 . 2024</h2>
       <h1 className="font-extralight text-mudGreenDark tracking-[0.15em] lg:tracking-[0.2em] text-[34px] leading-[34px] lg:leading-[90px] lg:text-[90px] animate-slidein500 opacity-0">Jose y Mariano</h1>
       <h3 className="font-rbeanie text-mudGreenDark text-[30px] lg:text-[78px] mt-[15px] animate-slidein700 opacity-0">Mendoza, Argentina</h3>
+      <Countdown targetDate="2024-11-23T17:00:00" className="opacity-0 animate-slidein900 mt-[50px]" />
       </div>
     </main>
   );
