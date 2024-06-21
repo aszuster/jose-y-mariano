@@ -3,9 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Vector13 from "../../../public/images/vector13.svg";
-import Vector15 from "../../../public/images/vector15.svg";
-import Vector16 from "../../../public/images/vector16.svg";
-import Vector17 from "../../../public/images/vector17.svg";
 import Vector18 from "../../../public/images/vector18.svg";
 import Vector18White from "../../../public/images/vector19white.svg";
 import Vector20 from "../../../public/images/vector20.svg";
@@ -71,29 +68,29 @@ export default function RecomBsAs() {
   ];
 
   return (
-    <section className="flex flex-col items-center bg-offWhite text-black">
-      <div className="lg:relative lg:w-full lg:flex lg:flex-col lg:items-center">
+    <section className="flex flex-col items-center bg-offWhite text-black overflow-x-hidden">
+      <div className="md:relative md:w-full md:flex md:flex-col md:items-center">
         <Image
           src={Vector13}
           alt=""
-          className="hidden lg:block lg:absolute lg:bottom-[100px] lg:left-0 lg:w-[254px]"
+          className="hidden lg:block lg:absolute lg:bottom-[100px] lg:left-0 lg:w-[200px]"
         />
         <Image
           src={Vector20}
           alt=""
-          className="hidden lg:block lg:absolute lg:bottom-0 lg:right-0 lg:w-[290px]"
+          className="hidden lg:block lg:absolute lg:bottom-0 lg:right-0 lg:w-[250px]"
         />
-        <h2 className="font-rbeanie text-center text-[54px] lg:text-[95px] leading-[63px] lg:leading-[110px] mt-[62px] lg:mt-[108px] mb-[28px] text-mudGreenDark">
+        <h2 className="font-rbeanie text-center text-[54px] md:text-[80px] leading-[63px] md:leading-[88px] mt-[62px] md:mt-[80px] mb-[28px] text-mudGreenDark">
           Recomendaciones <br /> Buenos Aires
         </h2>
       </div>
-      <div className="flex flex-col items-center max-w-[90%] lg:max-w-[1187px] lg:w-[990px] lg:relative pb-[88px]">
-        <div className="lg:relative lg:w-full flex flex-col items-center lg:mt-[88px]">
-          <Image src={alojamientoIcon} className="mb-[10px] lg:mb-[7px]" />
-          <h5 className="text-[22px] uppercase leading-[27px] text-center tracking-[0.35em] lg:tracking-[0.4em] font-light lg:font-normal text-gray lg:max-w-[935px]">
+      <div className="flex flex-col items-center max-w-[90%] md:max-w-[950px] md:w-[990px] md:relative pb-[88px]">
+        <div className="md:relative md:w-full flex flex-col items-center md:mt-[60px]">
+          <Image src={alojamientoIcon} className="mb-[10px] md:mb-[7px]" />
+          <h5 className="text-[22px] md:text-[20px] uppercase leading-[27px] text-center tracking-[0.35em] md:tracking-[0.4em] font-light md:font-normal text-gray md:max-w-[935px]">
             Alojamiento
           </h5>
-          <p className="text-base lg:text-[22px] text-darkGray leading-[34px] lg:leading-[35px] max-w-[300px] lg:max-w-[766px] text-center mt-[20px] mb-[40px] lg:mb-[10px]">
+          <p className="text-base md:text-[18px] text-darkGray leading-[34px] md:leading-[30px] max-w-[300px] md:max-w-[700px] text-center mt-[20px] mb-[40px] md:mb-[10px]">
             Recomendamos hospedarse en los barrios de{" "}
             <span className="font-semibold">Palermo o Recoleta</span>, donde
             encontrarán muy buenas opciones de hoteles y AirBNB.
@@ -101,20 +98,20 @@ export default function RecomBsAs() {
           <Image
             src={Vector18}
             alt=""
-            className="mt-[26px] w-[233px] lg:mt-[40px] mb-[50px] lg:w-[411px]"
+            className="mt-[26px] w-[233px] md:mt-[40px] mb-[50px] md:w-[350px]"
           />
-          <Image src={quehacerBsAsIcon} className="mb-[10px] lg:mb-[7px]" />
-          <h5 className="text-[22px] uppercase leading-[27px] text-center tracking-[0.35em] lg:tracking-[0.4em] font-light lg:font-normal text-gray lg:max-w-[935px]">
+          <Image src={quehacerBsAsIcon} className="mb-[10px] md:mb-[7px]" />
+          <h5 className="text-[22px] md:text-[20px] uppercase leading-[27px] text-center tracking-[0.35em] md:tracking-[0.4em] font-light md:font-normal text-gray md:max-w-[935px]">
             ¿Qué hacer?
           </h5>
-          <p className="text-base lg:text-[22px] text-darkGray leading-[34px] lg:leading-[35px] max-w-[300px] lg:max-w-[766px] text-center mt-[20px] mb-[40px] lg:mb-[70px]">
+          <p className="text-base md:text-[18px] text-darkGray leading-[34px] md:leading-[30px] max-w-[300px] md:max-w-[750px] text-center mt-[20px] mb-[40px] md:mb-[70px]">
             Buenos Aires es una ciudad encantadora y vibrante, con muchos
             barrios y experiencias por descubrir. Acá les dejamos una lista de
             lugares que no se pueden perder.
           </p>
         </div>
-        <div className="w-full lg:px-0 w-full">
-          <div className="mx-auto w-full lg:max-w-[1148px] space-y-2">
+        <div className="w-full md:px-0 w-full">
+          <div className="mx-auto w-full md:max-w-[720px]  lg:max-w-[950px] space-y-2">
             {accordionItems.map((item, index) => (
               <div key={index} className="w-full">
                 <button
@@ -131,8 +128,8 @@ export default function RecomBsAs() {
                   />
                 </button>
                 {activeAccordion === index && (
-                  <div className="p-4 text-darkGray leading-[26px] max-w-[294px] lg:max-w-[926px]">
-                    {item.content}.<br />
+                  <div className="p-4 text-darkGray leading-[26px] max-w-[294px] md:max-w-[926px]">
+                    {item.content}<br />
                     <br />
                     <span className="font-bold">Lugares para ver:</span>{" "}
                     {item.content2}
@@ -143,27 +140,27 @@ export default function RecomBsAs() {
           </div>
         </div>
       </div>
-      <div className="bg-mudGreen pt-[51px] pb-[57px] lg:pb-[100px] w-full h-full">
-        <div className="lg:relative max-w-[90%] flex flex-col items-center mx-auto">
+      <div className="bg-mudGreen pt-[51px] pb-[57px] md:pb-[100px] w-full h-full">
+        <div className="md:relative max-w-[90%] flex flex-col items-center mx-auto">
           <Image
             src={Vector18White}
             alt=""
-            className="w-[179px] lg:mt-[115px] mb-[50px] lg:w-[411px]"
+            className="w-[179px] md:mt-[50px] mb-[50px] md:w-[350px]"
           />
           <Image src={gastronomiaIcon} className="mb-[10px]" />
-          <h5 className="text-[22px] uppercase leading-[27px] text-center tracking-[0.35em] lg:tracking-[0.4em] font-light lg:font-normal text-offWhite lg:max-w-[935px] lg:mb-0">
+          <h5 className="text-[22px] md:text-[20px] uppercase leading-[27px] text-center tracking-[0.35em] md:tracking-[0.4em] font-light md:font-normal text-offWhite md:max-w-[935px] md:mb-0">
             Gastronomía
           </h5>
-          <p className="text-base lg:text-[22px] text-offWhite leading-[34px] lg:leading-[35px] max-w-[300px] lg:max-w-[828px] text-center mt-[20px] mb-[40px] lg:mb-[60px]">
+          <p className="text-base md:text-[18px] text-offWhite leading-[34px] md:leading-[30px] max-w-[300px] md:max-w-[700px] text-center mt-[20px] mb-[40px] md:mb-[60px]">
             Van a encontrar excelentes opciones para comer alrededor de Buenos
             Aires, debajo les incluimos igualmente algunas recomendaciones.
           </p>
-          <div className="w-full max-w-md max-w-[90%] lg:max-w-[1148px]">
+          <div className="w-full max-w-md max-w-[90%] md:max-w-[950px]">
             <div className="flex justify-center border-b border-offWhite">
               <button
-                className={`px-[15px] lg:px-[45px] py-[10px] lg:py-[17px] uppercase text-[10px] lg:text-[22px] tracking-[0.5em] ${
+                className={`px-[15px] md:px-[30px] py-[10px] md:py-[18px] uppercase text-[10px] md:text-[18px] md:leading-[18px] tracking-[0.5em] ${
                   selectedTab === "tab1"
-                    ? "text-gray bg-offWhite font-bold rounded-tl-[11px] lg:rounded-tl-[25px] rounded-tr-[2px] lg:rounded-tr-[4px]"
+                    ? "text-gray bg-offWhite font-bold rounded-tl-[8px] md:rounded-tl-[20px] rounded-tr-[2px] md:rounded-tr-[4px]"
                     : "text-offWhite bg-transparent font-normal"
                 }`}
                 onClick={() => setSelectedTab("tab1")}
@@ -171,9 +168,9 @@ export default function RecomBsAs() {
                 Restaurantes
               </button>
               <button
-                className={`px-[15px] lg:px-[45px] py-[10px] lg:py-[17px] uppercase text-[10px] lg:text-[22px] tracking-[0.5em] ${
+                className={`px-[15px] md:px-[30px] py-[10px] md:py-[18px] uppercase text-[10px] md:text-[18px] md:leading-[18px] tracking-[0.5em] ${
                   selectedTab === "tab2"
-                    ? "text-gray bg-offWhite font-bold rounded-tl-[11px] lg:rounded-tl-[25px] rounded-tr-[2px] lg:rounded-tr-[4px]"
+                    ? "text-gray bg-offWhite font-bold rounded-tl-[8px] md:rounded-tl-[20px] rounded-tr-[2px] md:rounded-tr-[4px]"
                     : "text-offWhite bg-transparent font-normal"
                 }`}
                 onClick={() => setSelectedTab("tab2")}
@@ -181,9 +178,9 @@ export default function RecomBsAs() {
                 Bares
               </button>
               <button
-                className={`px-[15px] lg:px-[45px] py-[10px] lg:py-[17px] uppercase text-[10px] lg:text-[22px] tracking-[0.5em] ${
+                className={`px-[15px] md:px-[30px] py-[10px] md:py-[18px] uppercase text-[10px] md:text-[18px] md:leading-[18px] tracking-[0.5em] ${
                   selectedTab === "tab3"
-                    ? "text-gray bg-offWhite font-bold rounded-tl-[11px] lg:rounded-tl-[25px] rounded-tr-[2px] lg:rounded-tr-[4px]"
+                    ? "text-gray bg-offWhite font-bold rounded-tl-[8px] md:rounded-tl-[20px] rounded-tr-[2px] md:rounded-tr-[4px]"
                     : "text-offWhite bg-transparent font-normal"
                 }`}
                 onClick={() => setSelectedTab("tab3")}
@@ -191,12 +188,12 @@ export default function RecomBsAs() {
                 Cafés
               </button>
             </div>
-            <div className=" pt-[30px] lg:pt-[63px]">
+            <div className=" pt-[30px] md:pt-[63px] md:max-w-[90%] md:mx-auto">
               {selectedTab === "tab1" && (
                 <div>
-                  <ul className="font-base text-left leading-[30px] text-offWhite lg:text-[22px] lg:leading-[35px] ">
-                    <div className="lg:flex lg:gap-x-[100px] lg:justify-evenly">
-                    <div className="lg:max-w-[423px]">
+                  <ul className="font-base text-left leading-[30px] text-offWhite md:text-[18px] md:leading-[30px] ">
+                    <div className="md:flex md:gap-x-[100px] md:justify-evenly">
+                    <div className="md:max-w-[423px]">
                     <li className="my-5">
                       <p>
                         <span className="font-semibold underline">
@@ -291,7 +288,7 @@ export default function RecomBsAs() {
                       </p>
                     </li>
                     </div>
-                    <div className="lg:max-w-[423px]">
+                    <div className="md:max-w-[423px]">
                     <li className="my-5">
                       <p>
                         <span className="font-semibold underline">Atte.</span>
@@ -385,12 +382,12 @@ export default function RecomBsAs() {
                 </div>
               )}
               {selectedTab === "tab2" && (
-                <div className="lg:pl-[70px]">
-                  <ul className="font-base text-left leading-[30px] text-offWhite lg:text-[22px] lg:leading-[35px] ">
+                <div className="">
+                  <ul className="font-base text-left leading-[30px] text-offWhite md:text-[18px] md:leading-[30px] ">
                     <li className="my-5">
                       <p>
                         <span className="font-semibold">Pony Line </span>
-                        <br className="lg:hidden" />
+                        <br className="md:hidden" />
                         {/* Comida Argentina – Restaurante N1 hoy en día en Buenos Aires. Casi imposible conseguir reserva pero si van bien temprano o después de las 22 hs pueden conseguir lugar en la cava */}
                       </p>
                     </li>
@@ -399,14 +396,14 @@ export default function RecomBsAs() {
                         <span className="font-semibold">
                           Floreria Atlantico
                         </span>
-                        <br className="lg:hidden" />
+                        <br className="md:hidden" />
                         {/* De todo un poco */}
                       </p>
                     </li>
                     <li className="my-5">
                       <p>
                         <span className="font-semibold">Bar Presidente</span>
-                        <br className="lg:hidden" />
+                        <br className="md:hidden" />
                         {/* Comida Argentina – mismos dueños que Don Julio pero más tranquilo 
 y fácil de conseguir reserva */}
                       </p>
@@ -414,42 +411,42 @@ y fácil de conseguir reserva */}
                     <li className="my-5">
                       <p>
                         <span className="font-semibold">Festival</span>
-                        <br className="lg:hidden" />
+                        <br className="md:hidden" />
                         {/* Comida Argentina */}
                       </p>
                     </li>
                     <li className="my-5">
                       <p>
                         <span className="font-semibold">Soria</span>
-                        <br className="lg:hidden" />
+                        <br className="md:hidden" />
                         {/* Comida Fusión Argentina y Japonesa */}
                       </p>
                     </li>
                     <li className="my-5">
                       <p>
                         <span className="font-semibold">Helka</span>
-                        <br className="lg:hidden" />
+                        <br className="md:hidden" />
                         {/* Bodegón Argentino */}
                       </p>
                     </li>
                     <li className="my-5">
                       <p>
                         <span className="font-semibold">La Ferneteria</span>
-                        <br className="lg:hidden" />
+                        <br className="md:hidden" />
                         {/* Bodegón Argentino */}
                       </p>
                     </li>
                     <li className="my-5">
                       <p>
                         <span className="font-semibold">Invernadero</span>
-                        <br className="lg:hidden" />
+                        <br className="md:hidden" />
                         {/* Comida Fusión Japonesa y Peruana */}
                       </p>
                     </li>
                     <li className="my-5">
                       <p>
                         <span className="font-semibold">Naranjo</span>
-                        <br className="lg:hidden" />
+                        <br className="md:hidden" />
                         {/* Asado – Reservar con anticipación */}
                       </p>
                     </li>
@@ -458,14 +455,14 @@ y fácil de conseguir reserva */}
                         <span className="font-semibold">
                           La Fuerza Vermuteria
                         </span>
-                        <br className="lg:hidden" />
+                        <br className="md:hidden" />
                         {/* Comida Italiana */}
                       </p>
                     </li>
                     <li className="my-5">
                       <p>
                         <span className="font-semibold">Gran Bar Danzon</span>
-                        <br className="lg:hidden" />
+                        <br className="md:hidden" />
                         {/* Vegetariano – pero aprobado por Mariano! */}
                       </p>
                     </li>
@@ -474,14 +471,14 @@ y fácil de conseguir reserva */}
                         <span className="font-semibold">
                           Frank’s – Speakeasy
                         </span>
-                        <br className="lg:hidden" />
+                        <br className="md:hidden" />
                         {/* Comida Argentina */}
                       </p>
                     </li>
                     <li className="my-5">
                       <p>
                         <span className="font-semibold">Trade Sky Bar</span>
-                        <br className="lg:hidden" />
+                        <br className="md:hidden" />
                         {/* Pizzas y Aperol */}
                       </p>
                     </li>
@@ -489,9 +486,9 @@ y fácil de conseguir reserva */}
                 </div>
               )}
               {selectedTab === "tab3" && (
-                <div className="lg:pl-[70px] lg:mt-7">
-                  <p className="text-offWhite lg:text-[22px]">Café/Desayunos/Brunch</p>
-                  <ul className="font-base text-left leading-[30px] text-offWhite lg:text-[22px] lg:leading-[35px] ">
+                <div className="mt-7">
+                  <p className="text-offWhite md:text-[18px]">Café/Desayunos/Brunch</p>
+                  <ul className="font-base text-left leading-[30px] text-offWhite md:text-[18px] md:leading-[30px] ">
                     <li className="my-5">
                       <p>
                         <span className="font-semibold">Birkin</span>
@@ -575,14 +572,14 @@ y fácil de conseguir reserva */}
           <Image
             src={Vector21White}
             alt=""
-            className="w-[179px] lg:mt-[115px] mb-[50px] lg:w-[416px] hidden lg:block lg:absolute lg:bottom-[-50px] lg:right-0"
+            className="w-[179px] md:mt-[115px] mb-[50px] md:w-[350px] hidden lg:block md:absolute md:bottom-[-50px] md:right-0"
           />
         </div>
       </div>
 
-      <div className="bg-mudGreenDark text-white w-full pt-[43px] lg:pt-[54px] pb-[30px] lg:pb-[40px]">
+      <div className="bg-mudGreenDark text-white w-full pt-[43px] md:pt-[54px] pb-[30px] md:pb-[40px]">
         <div className="flex flex-col items-center mx-auto">
-          <Image src={Firma} alt="" className="lg:w-[192px]" />
+          <Image src={Firma} alt="" className="md:w-[160px]" />
         </div>
       </div>
     </section>
