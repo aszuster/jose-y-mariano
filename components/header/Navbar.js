@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-const Navbar = () => {
+const Navbar = ({ authStatus, onLogout }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -37,11 +37,13 @@ const Navbar = () => {
               Inicio
             </p>
           </Link>
+          {authStatus === "full" && (
           <Link href="/preboda">
             <p className="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left text-mudGreenDark uppercase text-lg tracking-[0.35em]">
               Preboda
             </p>
           </Link>
+           )}
           <Link href="/boda">
             <p className="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left text-mudGreenDark uppercase text-lg tracking-[0.35em]">
               Boda
@@ -105,11 +107,13 @@ const Navbar = () => {
               Inicio
             </p>
           </Link>
+          {authStatus === "full" && (
           <Link href="/preboda">
             <p onClick={closeMenu} className="block text-[18px] font-light px-4 py-2 uppercase text-mudGreenDark my-5 tracking-[0.3em]">
               Preboda
             </p>
           </Link>
+          )}
           <Link href="/boda">
             <p onClick={closeMenu} className="block text-[18px] font-light px-4 py-2 uppercase text-mudGreenDark my-5 tracking-[0.3em]">
               Boda
