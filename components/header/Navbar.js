@@ -29,23 +29,23 @@ const Navbar = ({ authStatus, onLogout }) => {
   };
 
   return (
-    <nav className="flex justify-end lg:justify-center bg-offWhite p-4 border-b border-mudGreenDark h-[52px] lg:h-[110px] z-50 relative">
+    <nav className="flex justify-end lg:justify-center bg-offWhite p-4 border-b border-mudGreenDark h-[52px] lg:h-[90px] z-50 relative">
       <div className="max-w-7xl lg:mx-auto flex justify-end lg:justify-center items-center w-full">
         <div className="hidden md:flex space-x-10">
           <Link href="/">
-            <p className="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left text-mudGreenDark uppercase text-lg tracking-[0.35em]">
+            <p className="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left text-mudGreenDark uppercase text-[14px] tracking-[0.35em]">
               Inicio
             </p>
           </Link>
           {authStatus === "full" && (
           <Link href="/preboda">
-            <p className="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left text-mudGreenDark uppercase text-lg tracking-[0.35em]">
+            <p className="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left text-mudGreenDark uppercase text-[14px] tracking-[0.35em]">
               Preboda
             </p>
           </Link>
            )}
           <Link href="/boda">
-            <p className="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left text-mudGreenDark uppercase text-lg tracking-[0.35em]">
+            <p className="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left text-mudGreenDark uppercase text-[14px] tracking-[0.35em]">
               Boda
             </p>
           </Link>
@@ -56,27 +56,27 @@ const Navbar = ({ authStatus, onLogout }) => {
           >
             <div className="absolute w-[200px] h-[50px] hover:pb-[500px]">
             </div>
-            <p className="cursor-pointer	 relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left text-mudGreenDark uppercase text-lg tracking-[0.35em]">
+            <p className="cursor-pointer	 relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left text-mudGreenDark uppercase text-[14px] tracking-[0.35em]">
               Recomendaciones
             </p>
 
             {dropdownOpen && (
               <div className="absolute bg-lightGray shadow-md mt-2 rounded-md px-[20px] py-[7px]">
                 <Link href="/recomendaciones-mendoza">
-                  <p className="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-[125px] after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left block text-[18px] font-light px-4 py-2 text-mudGreenDark my-3 tracking-[0.3em] uppercase">
+                  <p className="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-[100px] after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left block text-[14px] font-light px-4 py-2 text-mudGreenDark my-3 tracking-[0.3em] uppercase">
                     Mendoza
                   </p>
                 </Link>
                 <Link href="/recomendaciones-buenos-aires">
-                  <p className="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-[190px] after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left block text-[18px] font-light px-4 py-2 text-mudGreenDark my-3 tracking-[0.3em] uppercase">
-                    Buenos Aires
+                  <p className="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-[150px] after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left  block text-[14px] font-light px-4 py-2 text-mudGreenDark my-3 tracking-[0.3em] uppercase">
+                    Buenos&nbsp;Aires
                   </p>
                 </Link>
               </div>
             )}
           </div>
           <Link href="/rsvp">
-            <p className="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left text-mudGreenDark uppercase text-lg tracking-[0.35em]">
+            <p className="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left text-mudGreenDark uppercase text-[14px] tracking-[0.35em]">
               RSVP
             </p>
           </Link>

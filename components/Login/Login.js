@@ -29,7 +29,7 @@ const Login = ({ onLogin }) => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder=""
-          className="outline-0	w-[306px] bg-transparent p-2 border-b border-mudGreenDark focus:border-b focus:border-mudGreenDark mb-4 text-[18px] text-mudGreenDark focus:border-transparent focus:ring-0"
+          className="outline-0 w-[306px] bg-transparent p-2 border-b border-mudGreenDark focus:border-b focus:border-mudGreenDark mb-4 text-[18px] text-mudGreenDark focus:border-transparent focus:ring-0"
         />
         <h2 className="mb-4 text-[18px] tracking-[0.4em] font-semibold text-center text-mudGreenDark uppercase">contraseña</h2>
         <button
