@@ -29,8 +29,8 @@ const Navbar = ({ authStatus, onLogout }) => {
   };
 
   return (
-    <nav className="flex justify-end lg:justify-center bg-offWhite p-4 border-b border-mudGreenDark h-[52px] lg:h-[90px] z-50 relative">
-      <div className="max-w-7xl lg:mx-auto flex justify-end lg:justify-center items-center w-full">
+    <nav className="flex justify-end md:justify-center bg-offWhite p-4 border-b border-mudGreenDark h-[52px] md:h-[90px] z-50 relative">
+      <div className="max-w-7xl md:mx-auto flex justify-end md:justify-center items-center w-full">
         <div className="hidden md:flex space-x-10">
           <Link href="/">
             <p className="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-mudGreenDark after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left text-mudGreenDark uppercase text-[14px] tracking-[0.35em]">
