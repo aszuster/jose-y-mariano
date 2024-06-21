@@ -115,7 +115,7 @@ export default function Preboda() {
           <p className="text-base lg:text-[22px] leading-[26px] font-normal text-center uppercase tracking-[0.3em] lg:tracking-[0.4em] max-w-[200px] lg:max-w-full">
             ¡Evento solo para adultos!
           </p>
-          <Link href="#">
+          <Link href="https://open.spotify.com/playlist/18AoNveB9vYOzA1KBZBrA1?si=9elSzvCzS3eF57eaR_eNFw&nd=1&dlsi=e400a862465a41cc">
             <p className="uppercase underline font-bold text-[13px] lg:text-[18px] mt-[28px] tracking-[0.3em] lg:tracking-[0.4em]">
               Ponete en el mood
             </p>
