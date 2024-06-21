@@ -60,7 +60,7 @@ const Countdown = ({ targetDate, className }) => {
             <p className='font-bold text-[20px] tracking-[0.3em] pb-[3px]'>{timeLeft.minutes}</p>
             <p className='uppercase font-semibold text-[12px] tracking-[0.3em]'>minutos</p> 
             </div>
-        </div> : <span>Time's up!</span>}
+        </div> : <span>--</span>}
       </div>
     </div>
   );
