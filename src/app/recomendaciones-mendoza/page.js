@@ -20,12 +20,12 @@ export default function RecomMdz() {
   return (
     <section className="flex flex-col items-center bg-offWhite text-black">
       <div className="md:relative md:w-full md:flex md:flex-col md:items-center">
-      <Image
+        <Image
           src={Vector13}
           alt=""
           className="hidden lg:block lg:absolute lg:bottom-0 lg:left-0 lg:w-[200px]"
         />
-              <Image
+        <Image
           src={Vector20}
           alt=""
           className="hidden lg:block lg:absolute lg:top-[300px] lg:right-0 lg:w-[220px]"
