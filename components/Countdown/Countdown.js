@@ -47,18 +47,18 @@ const Countdown = ({ targetDate, className }) => {
     <div className={`font-montserrat h-screen bg-gray-900 text-mudGreen ${className}`}>
       <div className="text-6xl">
         {timerComponents.length ? 
-        <div className='flex gap-x-[50px]'>
+        <div className='flex gap-x-[20px] md:gap-x-[50px]'>
             <div className='flex flex-col items-center text-mudGreen'>
-            <p className='font-bold text-[20px] tracking-[0.3em] pb-[3px]'>{timeLeft.days}</p>
-            <p className='uppercase font-semibold text-[12px] tracking-[0.3em]'>días</p> 
+            <p className='font-bold text-[18px] md:text-[20px] tracking-[0.3em] pb-[3px]'>{timeLeft.days}</p>
+            <p className='uppercase font-semibold text-[10px] md:text-[12px] tracking-[0.3em]'>días</p> 
             </div>
             <div className='flex flex-col items-center text-mudGreen'>
-            <p className='font-bold text-[20px] tracking-[0.3em] pb-[3px]'>{timeLeft.hours}</p>
-            <p className='uppercase font-semibold text-[12px] tracking-[0.3em]'>horas</p> 
+            <p className='font-bold text-[18px] md:text-[20px] tracking-[0.3em] pb-[3px]'>{timeLeft.hours}</p>
+            <p className='uppercase font-semibold text-[10px] md:text-[12px] tracking-[0.3em]'>horas</p> 
             </div>
             <div className='flex flex-col items-center text-mudGreen'>
-            <p className='font-bold text-[20px] tracking-[0.3em] pb-[3px]'>{timeLeft.minutes}</p>
-            <p className='uppercase font-semibold text-[12px] tracking-[0.3em]'>minutos</p> 
+            <p className='font-bold text-[18px] md:text-[20px] tracking-[0.3em] pb-[3px]'>{timeLeft.minutes}</p>
+            <p className='uppercase font-semibold text-[10px] md:text-[12px] tracking-[0.3em]'>mins</p> 
             </div>
         </div> : <span>--</span>}
       </div>
