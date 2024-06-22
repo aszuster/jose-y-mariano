@@ -111,34 +111,38 @@ export default function RecomBsAs() {
           </p>
         </div>
         <div className="w-full md:px-0 w-full">
-          <div className="mx-auto w-full md:max-w-[720px]  lg:max-w-[950px] space-y-2">
-            {accordionItems.map((item, index) => (
-              <div key={index} className="w-full">
-                <button
-                  onClick={() => toggleAccordion(index)}
-                  className="w-full flex items-center gap-x-[10px] w-full p-4 text-left text-[18px] font-semibold text-darkGray border-b border-darkGray"
-                >
-                  <span>{item.title}</span>
-                  <Image
-                    src={chevronDown}
-                    alt="chevron"
-                    className={`w-5 h-5 transition-transform ${
-                      activeAccordion === index ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-                {activeAccordion === index && (
-                  <div className="p-4 text-darkGray leading-[26px] max-w-[294px] md:max-w-[926px]">
-                    {item.content}<br />
-                    <br />
-                    <span className="font-bold">Lugares para ver:</span>{" "}
-                    {item.content2}
-                  </div>
-                )}
+      <div className="mx-auto w-full md:max-w-[720px] lg:max-w-[950px] space-y-2">
+        {accordionItems.map((item, index) => (
+          <div key={index} className="w-full">
+            <button
+              onClick={() => toggleAccordion(index)}
+              className="w-full flex items-center gap-x-[10px] p-4 text-left text-[18px] font-semibold text-darkGray border-b border-darkGray"
+            >
+              <span>{item.title}</span>
+              <Image
+                src={chevronDown}
+                alt="chevron"
+                className={`w-5 h-5 transition-transform duration-500 ${
+                  activeAccordion === index ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+            <div
+              className={`overflow-hidden transition-all duration-500 ${
+                activeAccordion === index ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+              }`}
+            >
+              <div className="p-4 text-darkGray leading-[26px] max-w-[294px] md:max-w-[926px]">
+                {item.content}
+                <br />
+                <br />
+                <span className="font-bold">Lugares para ver:</span> {item.content2}
               </div>
-            ))}
+            </div>
           </div>
-        </div>
+        ))}
+      </div>
+    </div>
       </div>
       <div className="bg-mudGreen pt-[51px] pb-[57px] md:pb-[100px] w-full h-full">
         <div className="md:relative max-w-[90%] flex flex-col items-center mx-auto">
@@ -158,7 +162,7 @@ export default function RecomBsAs() {
           <div className="w-full max-w-md max-w-[90%] md:max-w-[950px]">
             <div className="flex justify-center border-b border-offWhite">
               <button
-                className={`px-[15px] md:px-[30px] py-[10px] md:py-[18px] uppercase text-[10px] md:text-[18px] md:leading-[18px] tracking-[0.5em] ${
+                className={`px-[15px] md:px-[30px] py-[10px] md:py-[18px] uppercase text-[10px] md:text-[18px] md:leading-[18px] tracking-[0.5em]  transition-all duration-300 ease-in-out ${
                   selectedTab === "tab1"
                     ? "text-gray bg-offWhite font-bold rounded-tl-[8px] md:rounded-tl-[20px] rounded-tr-[2px] md:rounded-tr-[4px]"
                     : "text-offWhite bg-transparent font-normal"
@@ -168,7 +172,7 @@ export default function RecomBsAs() {
                 Restaurantes
               </button>
               <button
-                className={`px-[15px] md:px-[30px] py-[10px] md:py-[18px] uppercase text-[10px] md:text-[18px] md:leading-[18px] tracking-[0.5em] ${
+                className={`px-[15px] md:px-[30px] py-[10px] md:py-[18px] uppercase text-[10px] md:text-[18px] md:leading-[18px] tracking-[0.5em] transition-all duration-300 ease-in-out ${
                   selectedTab === "tab2"
                     ? "text-gray bg-offWhite font-bold rounded-tl-[8px] md:rounded-tl-[20px] rounded-tr-[2px] md:rounded-tr-[4px]"
                     : "text-offWhite bg-transparent font-normal"
@@ -178,7 +182,7 @@ export default function RecomBsAs() {
                 Bares
               </button>
               <button
-                className={`px-[15px] md:px-[30px] py-[10px] md:py-[18px] uppercase text-[10px] md:text-[18px] md:leading-[18px] tracking-[0.5em] ${
+                className={`px-[15px] md:px-[30px] py-[10px] md:py-[18px] uppercase text-[10px] md:text-[18px] md:leading-[18px] tracking-[0.5em] transition-all duration-300 ease-in-out ${
                   selectedTab === "tab3"
                     ? "text-gray bg-offWhite font-bold rounded-tl-[8px] md:rounded-tl-[20px] rounded-tr-[2px] md:rounded-tr-[4px]"
                     : "text-offWhite bg-transparent font-normal"
@@ -188,7 +192,7 @@ export default function RecomBsAs() {
                 Cafés
               </button>
             </div>
-            <div className=" pt-[30px] md:pt-[63px] md:max-w-[90%] md:mx-auto">
+            <div className=" pt-[30px] md:pt-[63px] md:max-w-[90%] md:mx-auto transition-opacity duration-300 ease-in-out">
               {selectedTab === "tab1" && (
                 <div>
                   <ul className="font-base text-left leading-[30px] text-offWhite md:text-[18px] md:leading-[30px] ">
@@ -382,8 +386,8 @@ export default function RecomBsAs() {
                 </div>
               )}
               {selectedTab === "tab2" && (
-                <div className="">
-                  <ul className="font-base text-left leading-[30px] text-offWhite md:text-[18px] md:leading-[30px] ">
+                <div className=" transition-opacity duration-300 ease-in-out">
+                  <ul className="font-base text-left md:text-center leading-[30px] text-offWhite md:text-[18px] md:leading-[30px] ">
                     <li className="my-5">
                       <p>
                         <span className="font-semibold">Pony Line </span>
@@ -486,9 +490,9 @@ y fácil de conseguir reserva */}
                 </div>
               )}
               {selectedTab === "tab3" && (
-                <div className="mt-7">
-                  <p className="text-offWhite md:text-[18px]">Café/Desayunos/Brunch</p>
-                  <ul className="font-base text-left leading-[30px] text-offWhite md:text-[18px] md:leading-[30px] ">
+                <div className="mt-7 transition-opacity duration-300 ease-in-out">
+                  <p className="text-offWhite md:text-[18px] md:text-center">Café/Desayunos/Brunch</p>
+                  <ul className="font-base text-left md:text-center leading-[30px] text-offWhite md:text-[18px] md:leading-[30px] ">
                     <li className="my-5">
                       <p>
                         <span className="font-semibold">Birkin</span>

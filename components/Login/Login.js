@@ -35,7 +35,7 @@ const Login = ({ onLogin }) => {
         <h2 className="mb-4 text-[12px] md:text-[15px] tracking-[0.4em] font-semibold text-center text-mudGreenDark uppercase">contraseña</h2>
         <button
           type="submit"
-          className="uppercase text-[12px] md:text-[15px] tracking-[0.4em] py-[15px] md:py-[18px] px-[27px] md:px-[40px] mt-[50px] md:mt-[64px] bg-gray text-white rounded-tl-[20px] rounded-br-[20px] rounded-tr-[2px] rounded-bl-[2px] lg:rounded-tl-[30px] lg:rounded-br-[30px] lg:rounded-tr-[3px] lg:rounded-bl-[3px]"
+          className="uppercase text-[12px] md:text-[15px] tracking-[0.4em] py-[15px] md:py-[18px] px-[27px] md:px-[40px] mt-[50px] md:mt-[64px] bg-gray text-white rounded-tl-[20px] rounded-br-[20px] rounded-tr-[2px] rounded-bl-[2px] lg:rounded-tl-[30px] lg:rounded-br-[30px] lg:rounded-tr-[3px] lg:rounded-bl-[3px] transition-colors duration-300 ease-in-out hover:bg-mudGreen"
         >
           Ingresar
         </button>

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Animated from "../../../components/Animated/Animated";
 import MapaMdz from "../../../public/images/mapa-mdz.webp";
 import Vector13 from "../../../public/images/vector13.svg";
 import Vector15 from "../../../public/images/vector15.svg";
@@ -30,9 +31,11 @@ export default function RecomMdz() {
           alt=""
           className="hidden lg:block lg:absolute lg:top-[300px] lg:right-0 lg:w-[220px]"
         />
+        <Animated animationClass="animate-slidein100">
         <h2 className="hidden md:block font-rbeanie text-[46px] leading-[57px] mt-[50px] mb-[28px] text-mudGreenDark">
           Recomendaciones
         </h2>
+        </Animated>
         <Image
           src={MapaMdz}
           alt=""
@@ -44,16 +47,22 @@ export default function RecomMdz() {
       <div className="flex flex-col items-center max-w-[90%] lg:max-w-[950px] md:relative pb-[88px]">
         <div className="md:relative md:w-full flex flex-col items-center mt-[38px] md:mt-[100px]">
           <Image src={alojamientoIcon} className="mb-[10px] md:mb-[7px]" />
+          <Animated animationClass="animate-slidein100">
           <h5 className="text-[22px] md:text-[20px] uppercase leading-[27px] text-center tracking-[0.35em] md:tracking-[0.4em] font-light md:font-normal text-gray md:max-w-[935px]">
             Alojamiento
           </h5>
+          </Animated>
+          <Animated animationClass="animate-slidein300">
           <p className="text-base md:text-[18px] text-darkGray leading-[34px] md:leading-[30px] max-w-[300px] md:max-w-[700px] text-center mt-[20px] mb-[40px] md:mb-[50px]">
             La ciudad de Mendoza y sus alrededores cuentan con una{" "}
             <span className="font-semibold">
               gran variedad de opciones para alojarse
             </span>
           </p>
+          </Animated>
+          <Animated animationClass="animate-slidein500">
           <div className="md:flex md:gap-x-[70px]">
+  
             <div className="text-center text-offWhite w-full bg-mudGreen pt-[46px] md:pt-[30px] pb-[20px] rounded-tl-[30px] rounded-tr-[8px]  rounded-bl-[8px] mb-[53px] md:mb-0">
               <p className="font-rbeanie px-[40px] text-left text-[50px] md:text-[56px] leading-[44px] md:leading-[57px] mb-[10px] md:mb-[20px]">
                 Mendoza Centro
@@ -68,6 +77,7 @@ export default function RecomMdz() {
                 </li>
               </ul>
             </div>
+    
             <div className="text-center text-offWhite w-full bg-mudGreen pt-[46px] md:pt-[30px] pb-[20px] rounded-tl-[30px] rounded-tr-[8px]  rounded-bl-[8px] mb-[53px] md:mb-0">
               <p className="font-rbeanie px-[40px] text-left text-[50px] md:text-[56px] leading-[44px] md:leading-[57px] mb-[10px] md:mb-[20px]">
                 Chacras <br className="md:hidden" />
@@ -84,8 +94,12 @@ export default function RecomMdz() {
                 <li className="my-5">. La María</li>
               </ul>
             </div>
+
           </div>
+      
+         
           <div className="text-center text-offWhite w-full md:flex md:flex-col md:items-center md:mt-[60px] bg-mudGreen pt-[46px] md:pt-[40px] pb-[20px] md:pb-[20px] rounded-tl-[30px] rounded-tr-[8px]  rounded-bl-[8px] mb-[53px] md:mb-0">
+         
             <p className="font-rbeanie px-[40px] text-left text-[50px] md:text-[56px] leading-[44px] md:leading-[57px] mb-[10px] md:mb-[20px]">
               Agrelo, Luján <br className="md:hidden" />
               de Cuyo
@@ -104,21 +118,27 @@ export default function RecomMdz() {
                 <li className="my-5">. Casa David</li>
               </div>
             </ul>
+           
           </div>
+          </Animated>
           <Image
             src={Vector15}
             alt=""
             className="mt-[19px] md:mt-[80px] mb-[50px] md:w-[350px]"
           />
-          <Image src={vuelosIcon} className="mb-[10px] md:mb-[7px]" />
+          <Animated animationClass="animate-slidein100">
+          <Image src={vuelosIcon} className="mb-[10px] md:mb-[7px] mx-auto" />
+          
           <h5 className="text-[22px] md:text-[20px] uppercase leading-[27px] text-center tracking-[0.35em] md:tracking-[0.4em] font-light md:font-normal text-gray md:max-w-[935px]">
             Vuelos
           </h5>
+          </Animated>
+          <Animated animationClass="animate-slidein300">
           <p className="text-base md:text-[18px] text-darkGray leading-[34px] md:leading-[30px] max-w-[300px] md:max-w-[700px] text-center mt-[20px] mb-[40px] md:mb-[50px]">
             El vuelo desde Buenos Aires tarda 2 horas.{" "}
             <span className="font-semibold">
               Hay alrededor de 6 frecuencias por día usando{" "}
-              <Link href="https://www.aerolineas.com.ar/" target="_blank" className="underline">
+              <Link href="https://www.aerolineas.com.ar/" target="_blank" className="underline transition-text duration-300 ease-in-out hover:text-mudGreen">
                 Aerolíneas Argentinas
               </Link>
               ,
@@ -128,21 +148,27 @@ export default function RecomMdz() {
             de Mendoza se encuentra en pleno centro y pueden tomarse Ubers o
             taxis a su alojamiento.
           </p>
+          </Animated>
+          
           <Image
             src={Vector16}
             alt=""
             className="mt-[19px] mb-[50px] md:w-[340px]"
           />
-          <Image src={transporteIcon} className="mb-[10px]" />
+          <Animated animationClass="animate-slidein300">
+          <Image src={transporteIcon} className="mb-[10px] mx-auto" />
           <h5 className="text-[22px] md:text-[20px] uppercase leading-[27px] text-center tracking-[0.35em] md:tracking-[0.4em] font-light md:font-normal text-gray md:max-w-[935px]">
             Transporte
           </h5>
+          </Animated>
+          <Animated animationClass="animate-slidein500">
           <p className="text-base md:text-[18px] text-darkGray leading-[34px] md:leading-[30px] max-w-[300px] md:max-w-[700px] text-center mt-[20px] mb-[40px] md:mb-[30px]">
             <span className="font-semibold">Uber funciona muy bien</span> en la
             ciudad de Mendoza. Para excursiones o planes de todo el día,
             recomendamos contratar un{" "}
             <span className="font-semibold">transporte privado/combis.</span>
           </p>
+          </Animated>
         </div>
       </div>
       <div className="bg-gray pt-[113px] md:pt-[70px] pb-[77px] md:pb-[60px] w-full md:h-[864px]">
@@ -154,7 +180,7 @@ export default function RecomMdz() {
           <div className="w-full max-w-md max-w-[90%] md:max-w-[950px]">
             <div className="flex justify-center border-b border-offWhite">
               <button
-                className={`px-[15px] md:px-[30px] py-[10px] md:py-[18px] uppercase text-[10px] md:text-[18px] md:leading-[18px] tracking-[0.5em] ${
+                className={`px-[15px] md:px-[30px] py-[10px] md:py-[18px] uppercase text-[10px] md:text-[18px] md:leading-[18px] tracking-[0.5em] transition-all duration-300 ease-in-out ${
                   selectedTab === "tab1"
                     ? "text-gray bg-offWhite font-bold rounded-tl-[8px] md:rounded-tl-[20px] rounded-tr-[2px] md:rounded-tr-[4px]"
                     : "text-offWhite bg-transparent font-normal"
@@ -164,7 +190,7 @@ export default function RecomMdz() {
                 Bodegas
               </button>
               <button
-                className={`px-[15px] md:px-[30px] py-[10px] md:py-[18px] uppercase text-[10px] md:text-[18px] md:leading-[18px] tracking-[0.5em] ${
+                className={`px-[15px] md:px-[30px] py-[10px] md:py-[18px] uppercase text-[10px] md:text-[18px] md:leading-[18px] tracking-[0.5em] transition-all duration-300 ease-in-out ${
                   selectedTab === "tab2"
                     ? "text-gray bg-offWhite font-bold rounded-tl-[8px] md:rounded-tl-[20px] rounded-tr-[2px] md:rounded-tr-[4px]"
                     : "text-offWhite bg-transparent font-normal"
@@ -174,7 +200,7 @@ export default function RecomMdz() {
                 Aventura
               </button>
             </div>
-            <div className=" pt-[30px] md:pt-[63px] md:max-w-[700px] md:text-center md:mx-auto">
+            <div className=" pt-[30px] md:pt-[63px] md:max-w-[700px] md:text-center md:mx-auto transition-opacity duration-300 ease-in-out">
               {selectedTab === "tab1" && (
                 <div>
                   <p className="font-base text-center md:text-[18px] leading-[34px] md:leading-[30px] text-offWhite  mb-[25px]">
@@ -248,7 +274,7 @@ export default function RecomMdz() {
                   <ul className="">
                     <li className="my-5 leading-[20px]">
                       . Un día de spa en
-                      <Link href="https://termascacheuta.com/" target="_blank">
+                      <Link href="https://termascacheuta.com/" target="_blank" className="transition-text duration-300 ease-in-out hover:text-darkGray">
                         <span className="font-semibold">
                            Termas de Cacheuta 
                         </span>
@@ -256,14 +282,14 @@ export default function RecomMdz() {
                     </li>
                     <li className="my-5 leading-[20px]">
                       .{" "}
-                      <Link href="https://argentinarafting.com/rafting-en-mendoza/" target="_blank">
+                      <Link href="https://argentinarafting.com/rafting-en-mendoza/" target="_blank" className="transition-text duration-300 ease-in-out hover:text-darkGray">
                         Rafting
                       </Link>
                        en el <span className="font-semibold">Rio Mendoza</span>
                     </li>
                     <li className="my-5 leading-[20px]">
                       .{" "}
-                      <Link href="https://argentinarafting.com/rafting-en-mendoza/" target="_blank">
+                      <Link href="https://argentinarafting.com/rafting-en-mendoza/" target="_blank" className="transition-text duration-300 ease-in-out hover:text-darkGray">
                         <span className="font-semibold">
                           Cabalgata y asado{" "}
                         </span>
