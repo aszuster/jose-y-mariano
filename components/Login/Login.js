@@ -21,7 +21,7 @@ const Login = ({ onLogin }) => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-offWhite">
-      <form onSubmit={handleSubmit} className="bg-offWhite h-screen w-screen flex flex-col items-center justify-center">
+      <form onSubmit={handleSubmit} className="bg-offWhite h-screen flex flex-col items-center justify-center">
         <Image src={Firma} className="mb-[84px]" />
         
         <input
