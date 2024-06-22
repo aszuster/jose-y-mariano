@@ -12,7 +12,7 @@ export default function RSVP() {
           <h4 className="text-[40px] leading-[55px] text-center md:text-[36px] md:leading-[48px] font-light text-darkGray md:max-w-[750px]">
             ¡Estamos muy felices de compartir con ustedes este día tan especial!
           </h4>
-          <Link href="" className="mt-[40px] md:mt-[50px] mb-[60px] md:mb-[50px]">
+          <Link href="" className="mt-[40px] md:mt-[50px] mb-[60px] md:mb-[50px]" target="_blank">
             <p className="uppercase text-[12px] md:text-[14px] text-white tracking-[0.4em] bg-gray px-[27px] md:px-[25px] py-[14px] md:py-[18px] rounded-tl-[28px] md:rounded-tl-[30px] rounded-br-[28px] md:rounded-br-[30px] rounded-tr-[3px] md:rounded-tr-[3px] rounded-bl-[3px] md:rounded-bl-[3px]">
               Confirmar asistencia
             </p>

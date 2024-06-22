@@ -45,14 +45,14 @@ export default function Boda() {
         <p className="text-center font-rbeanie text-[24px] md:text-[38px] md:leading-[45px] text-gray leading-[42px] mt-[15px] mb-[30px]">
         Sábado 23 de noviembre - 17hs
           <br />
-          <Link href="https://maps.app.goo.gl/zAvhCW3QvYsJwZXr6">
+          <Link href="https://maps.app.goo.gl/zAvhCW3QvYsJwZXr6" target="_blank">
           Pulenta Estate, Mendoza
           </Link>
           <br />
           Dresscode: Formal
         </p>
         
-        <Link href="#">
+        <Link href="#" target="_blank">
           <p className=" uppercase text-gray underline font-bold text-base md:text-[16px] tracking-[0.3em] md:tracking-[0.3em]">
             Ver ejemplos
           </p>
@@ -68,7 +68,7 @@ export default function Boda() {
           <p className="text-base md:text-[18px] leading-[26px] font-normal text-center uppercase tracking-[0.3em] md:tracking-[0.4em] max-w-[200px] md:max-w-full">
             ¡Evento solo para adultos!
           </p>
-          <Link href="https://open.spotify.com/artist/36MCIOsetecL6CN8ZYqCTw?si=jfyZ3A7YTtySnn3lwu8Ccw">
+          <Link href="https://open.spotify.com/artist/36MCIOsetecL6CN8ZYqCTw?si=jfyZ3A7YTtySnn3lwu8Ccw" target="_blank">
             <p className="uppercase underline font-bold text-[13px] md:text-[14px] mt-[28px] tracking-[0.3em] md:tracking-[0.4em]">
               Ponete en el mood
             </p>

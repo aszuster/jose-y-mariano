@@ -48,12 +48,12 @@ export default function Preboda() {
           <span className="hidden md:inline-block">-&nbsp;</span>
           <span className=" md:hidden">De&nbsp;</span> 18 a 00hs
           <br />
-          <Link href="https://maps.app.goo.gl/w7dyCxX8Pnf51voL7">Palapas, Potrerillos</Link>
+          <Link href="https://maps.app.goo.gl/w7dyCxX8Pnf51voL7" target="_blank">Palapas, Potrerillos</Link>
           <br />
           Dresscode: Elegante Sport
         </p>
         
-        <Link href="#">
+        <Link href="#" target="_blank">
           <p className="uppercase text-gray underline font-bold text-base md:text-[16px] tracking-[0.3em] md:tracking-[0.3em]">
             Ver ejemplos
           </p>
@@ -115,7 +115,7 @@ export default function Preboda() {
           <p className="text-base md:text-[18px] leading-[26px] font-normal text-center uppercase tracking-[0.3em] md:tracking-[0.4em] max-w-[200px] md:max-w-full">
             ¡Evento solo para adultos!
           </p>
-          <Link href="https://open.spotify.com/playlist/18AoNveB9vYOzA1KBZBrA1?si=9elSzvCzS3eF57eaR_eNFw">
+          <Link href="https://open.spotify.com/playlist/18AoNveB9vYOzA1KBZBrA1?si=9elSzvCzS3eF57eaR_eNFw" target="_blank">
             <p className="uppercase underline font-bold text-[13px] md:text-[14px] mt-[28px] tracking-[0.3em] md:tracking-[0.4em]">
               Ponete en el mood
             </p>

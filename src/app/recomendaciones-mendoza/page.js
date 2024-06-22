@@ -118,7 +118,7 @@ export default function RecomMdz() {
             El vuelo desde Buenos Aires tarda 2 horas.{" "}
             <span className="font-semibold">
               Hay alrededor de 6 frecuencias por día usando{" "}
-              <Link href="https://www.aerolineas.com.ar/" className="underline">
+              <Link href="https://www.aerolineas.com.ar/" target="_blank" className="underline">
                 Aerolíneas Argentinas
               </Link>
               ,
@@ -248,7 +248,7 @@ export default function RecomMdz() {
                   <ul className="">
                     <li className="my-5 leading-[20px]">
                       . Un día de spa en
-                      <Link href="https://termascacheuta.com/">
+                      <Link href="https://termascacheuta.com/" target="_blank">
                         <span className="font-semibold">
                            Termas de Cacheuta 
                         </span>
@@ -256,14 +256,14 @@ export default function RecomMdz() {
                     </li>
                     <li className="my-5 leading-[20px]">
                       .{" "}
-                      <Link href="https://argentinarafting.com/rafting-en-mendoza/">
+                      <Link href="https://argentinarafting.com/rafting-en-mendoza/" target="_blank">
                         Rafting
                       </Link>
                        en el <span className="font-semibold">Rio Mendoza</span>
                     </li>
                     <li className="my-5 leading-[20px]">
                       .{" "}
-                      <Link href="https://argentinarafting.com/rafting-en-mendoza/">
+                      <Link href="https://argentinarafting.com/rafting-en-mendoza/" target="_blank">
                         <span className="font-semibold">
                           Cabalgata y asado{" "}
                         </span>

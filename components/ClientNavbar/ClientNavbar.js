@@ -5,6 +5,7 @@ import Login from "../../components/Login/Login";
 
 const ClientNavbar = ({ children }) => {
   const [authStatus, setAuthStatus] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Verifica si hay información de autenticación en localStorage
@@ -12,6 +13,7 @@ const ClientNavbar = ({ children }) => {
     if (storedAuth) {
       setAuthStatus(storedAuth);
     }
+    setLoading(false); // Set loading to false after checking auth status
   }, []);
 
   const handleLogin = (status) => {
@@ -23,6 +25,10 @@ const ClientNavbar = ({ children }) => {
     setAuthStatus(null);
     localStorage.removeItem("authStatus");
   };
+
+  if (loading) {
+    return <div className="flex items-center justify-center h-screen bg-gray-100">Cargando...</div>;
+  }
 
   if (!authStatus) {
     return <Login onLogin={handleLogin} />;
