@@ -29,8 +29,9 @@ const Login = ({ onLogin }) => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder=""
-          className="outline-0 w-[200px] md:w-[250px] bg-transparent p-2 border-b border-mudGreenDark focus:border-b focus:border-mudGreenDark mb-4 text-[16px] md:text-[18px] text-mudGreenDark focus:border-transparent focus:ring-0"
+          className="outline-0 w-[200px] md:w-[250px] bg-transparent p-2  text-[16px] md:text-[18px] text-mudGreenDark focus:border-transparent focus:ring-0"
         />
+        <hr className="border-1 border-mudGreenDark  w-[200px] md:w-[250px] mb-4"/>
         <h2 className="mb-4 text-[12px] md:text-[15px] tracking-[0.4em] font-semibold text-center text-mudGreenDark uppercase">contraseña</h2>
         <button
           type="submit"
