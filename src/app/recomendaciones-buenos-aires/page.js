@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Animated from "../../../components/Animated/Animated";
 import Vector13 from "../../../public/images/vector13.svg";
 import Vector18 from "../../../public/images/vector18.svg";
 import Vector18White from "../../../public/images/vector19white.svg";
@@ -80,37 +81,48 @@ export default function RecomBsAs() {
           alt=""
           className="hidden lg:block lg:absolute lg:bottom-0 lg:right-0 lg:w-[250px]"
         />
+         <Animated animationClass="animate-slidein100">
         <h2 className="font-rbeanie text-center text-[54px] md:text-[80px] leading-[63px] md:leading-[88px] mt-[62px] md:mt-[80px] mb-[28px] text-mudGreenDark">
           Recomendaciones <br /> Buenos Aires
         </h2>
+        </Animated>
       </div>
       <div className="flex flex-col items-center max-w-[90%] md:max-w-[950px] md:w-[990px] md:relative pb-[88px]">
         <div className="md:relative md:w-full flex flex-col items-center md:mt-[60px]">
-          <Image src={alojamientoIcon} className="mb-[10px] md:mb-[7px]" />
+        <Animated animationClass="animate-slidein300">
+          <Image src={alojamientoIcon} className="mb-[10px] md:mb-[7px] mx-auto" />
           <h5 className="text-[22px] md:text-[20px] uppercase leading-[27px] text-center tracking-[0.35em] md:tracking-[0.4em] font-light md:font-normal text-gray md:max-w-[935px]">
             Alojamiento
           </h5>
+          </Animated>
+          <Animated animationClass="animate-slidein500">
           <p className="text-base md:text-[18px] text-darkGray leading-[34px] md:leading-[30px] max-w-[300px] md:max-w-[700px] text-center mt-[20px] mb-[40px] md:mb-[10px]">
             Recomendamos hospedarse en los barrios de{" "}
             <span className="font-semibold">Palermo o Recoleta</span>, donde
             encontrarán muy buenas opciones de hoteles y AirBNB.
           </p>
+          </Animated>
           <Image
             src={Vector18}
             alt=""
             className="mt-[26px] w-[233px] md:mt-[40px] mb-[50px] md:w-[350px]"
           />
-          <Image src={quehacerBsAsIcon} className="mb-[10px] md:mb-[7px]" />
+           <Animated animationClass="animate-slidein700">
+          <Image src={quehacerBsAsIcon} className="mb-[10px] md:mb-[7px] mx-auto" />
           <h5 className="text-[22px] md:text-[20px] uppercase leading-[27px] text-center tracking-[0.35em] md:tracking-[0.4em] font-light md:font-normal text-gray md:max-w-[935px]">
             ¿Qué hacer?
           </h5>
+          </Animated>
+          <Animated animationClass="animate-slidein900">
           <p className="text-base md:text-[18px] text-darkGray leading-[34px] md:leading-[30px] max-w-[300px] md:max-w-[750px] text-center mt-[20px] mb-[40px] md:mb-[70px]">
             Buenos Aires es una ciudad encantadora y vibrante, con muchos
             barrios y experiencias por descubrir. Acá les dejamos una lista de
             lugares que no se pueden perder.
           </p>
+          </Animated>
         </div>
         <div className="w-full md:px-0 w-full">
+        <Animated animationClass="animate-slidein100">
       <div className="mx-auto w-full md:max-w-[720px] lg:max-w-[950px] space-y-2">
         {accordionItems.map((item, index) => (
           <div key={index} className="w-full">
@@ -142,6 +154,7 @@ export default function RecomBsAs() {
           </div>
         ))}
       </div>
+      </Animated>
     </div>
       </div>
       <div className="bg-mudGreen pt-[51px] pb-[57px] md:pb-[100px] w-full h-full">
@@ -151,14 +164,19 @@ export default function RecomBsAs() {
             alt=""
             className="w-[179px] md:mt-[50px] mb-[50px] md:w-[350px]"
           />
-          <Image src={gastronomiaIcon} className="mb-[10px]" />
+           <Animated animationClass="animate-slidein100">
+          <Image src={gastronomiaIcon} className="mb-[10px] mx-auto" />
           <h5 className="text-[22px] md:text-[20px] uppercase leading-[27px] text-center tracking-[0.35em] md:tracking-[0.4em] font-light md:font-normal text-offWhite md:max-w-[935px] md:mb-0">
             Gastronomía
           </h5>
+          </Animated>
+          <Animated animationClass="animate-slidein300">
           <p className="text-base md:text-[18px] text-offWhite leading-[34px] md:leading-[30px] max-w-[300px] md:max-w-[700px] text-center mt-[20px] mb-[40px] md:mb-[60px]">
             Van a encontrar excelentes opciones para comer alrededor de Buenos
             Aires, debajo les incluimos igualmente algunas recomendaciones.
           </p>
+          </Animated>
+          <Animated animationClass="animate-slidein500">
           <div className="w-full max-w-md max-w-[90%] md:max-w-[950px]">
             <div className="flex justify-center border-b border-offWhite">
               <button
@@ -491,7 +509,7 @@ y fácil de conseguir reserva */}
               )}
               {selectedTab === "tab3" && (
                 <div className="mt-7 transition-opacity duration-300 ease-in-out">
-                  <p className="text-offWhite md:text-[18px] md:text-center">Café/Desayunos/Brunch</p>
+                  <p className="text-offWhite md:text-[18px] md:text-center">Café - Desayunos - Brunch</p>
                   <ul className="font-base text-left md:text-center leading-[30px] text-offWhite md:text-[18px] md:leading-[30px] ">
                     <li className="my-5">
                       <p>
@@ -573,6 +591,7 @@ y fácil de conseguir reserva */}
               )}
             </div>
           </div>
+          </Animated>
           <Image
             src={Vector21White}
             alt=""

@@ -171,7 +171,7 @@ export default function RecomMdz() {
           </Animated>
         </div>
       </div>
-      <div className="bg-gray pt-[113px] md:pt-[70px] pb-[77px] md:pb-[60px] w-full md:h-[864px]">
+      <div className="bg-gray pt-[113px] md:pt-[70px] pb-[77px] md:pb-[60px] w-full">
         <div className="max-w-[90%] flex flex-col items-center mx-auto">
           <Image src={quehacerIcon} className="mb-[10px]" />
           <h5 className="text-[22px] md:text-[20px] uppercase leading-[27px] text-center tracking-[0.35em] md:tracking-[0.4em] font-light md:font-normal text-offWhite md:max-w-[935px] mb-[60px]">
@@ -283,9 +283,9 @@ export default function RecomMdz() {
                     <li className="my-5 leading-[20px]">
                       .{" "}
                       <Link href="https://argentinarafting.com/rafting-en-mendoza/" target="_blank" className="transition-text duration-300 ease-in-out hover:text-darkGray">
-                        Rafting
+                      <span className="font-semibold">Rafting</span>
                       </Link>
-                       en el <span className="font-semibold">Rio Mendoza</span>
+                       en el Rio Mendoza
                     </li>
                     <li className="my-5 leading-[20px]">
                       .{" "}
@@ -320,12 +320,12 @@ export default function RecomMdz() {
                 Makeup
               </p>
               <ul className="text-[16px] leading-[30px] md:text-[18px] md:leading-[30px] text-darkGray">
-                <li>Luciana Oliva</li>
-                <li>Paula Sáez</li>
-                <li>Andrea Vargas</li>
-                <li>Mucho peluquería </li>
-                <li>Florencia Raviolo</li>
-                <li>Sofi bauco</li>
+                <li>. Luciana Oliva</li>
+                <li>. Paula Sáez</li>
+                <li>. Andrea Vargas</li>
+                <li>. Mucho peluquería </li>
+                <li>. Florencia Raviolo</li>
+                <li>. Sofi bauco</li>
               </ul>
             </div>
             <div>
@@ -333,11 +333,11 @@ export default function RecomMdz() {
                 Peluquería
               </p>
               <ul className="text-[16px] leading-[30px] md:text-[18px] md:leading-[30px] text-darkGray">
-                <li>Mala peluquería Mendoza </li>
-                <li>Mucho peluquería </li>
-                <li>Luciana Oliva</li>
-                <li>Sol Benegas</li>
-                <li>Simona Espacios</li>
+                <li>. Mala peluquería Mendoza </li>
+                <li>. Mucho peluquería </li>
+                <li>. Luciana Oliva</li>
+                <li>. Sol Benegas</li>
+                <li>. Simona Espacios</li>
               </ul>
             </div>
           </div>

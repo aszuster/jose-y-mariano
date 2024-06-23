@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import Animated from "../../../components/Animated/Animated";
 import Vector14 from "../../../public/images/vector14.svg";
 import Firma from "../../../public/images/firma-white.svg";
 
@@ -9,20 +10,24 @@ export default function RSVP() {
     <section className="flex flex-col items-center bg-offWhite text-black">
       <div className="flex flex-col items-center max-w-[90%] md:relative pb-[88px] md:pb-[110px]">
         <div className="md:relative md:w-full flex flex-col items-center mt-[63px] md:mt-[140px]">
-          <h4 className="text-[40px] leading-[55px] text-center md:text-[36px] md:leading-[48px] font-light text-darkGray md:max-w-[750px]">
+        <Animated animationClass="animate-slidein100">
+          <h4 className="mb-[40px] md:mb-[50px] text-[40px] leading-[55px] text-center md:text-[36px] md:leading-[48px] font-light text-darkGray md:max-w-[750px]">
             ¡Estamos muy felices de compartir con ustedes este día tan especial!
           </h4>
-          <Link href="" className="mt-[40px] md:mt-[50px] mb-[60px] md:mb-[50px] " target="_blank">
+          </Animated>
+          <Animated animationClass="animate-slidein300">
+          <Link href="" className="mt-[40px] md:mt-[50px] mb-[60px] md:mb-[50px]" target="_blank">
             <p className="uppercase text-[12px] md:text-[14px] text-white tracking-[0.4em] bg-gray px-[27px] md:px-[25px] py-[14px] md:py-[18px] rounded-tl-[28px] md:rounded-tl-[30px] rounded-br-[28px] md:rounded-br-[30px] rounded-tr-[3px] md:rounded-tr-[3px] rounded-bl-[3px] md:rounded-bl-[3px] transition-colors duration-300 ease-in-out hover:bg-mudGreen">
               Confirmar asistencia
             </p>
           </Link>
+          </Animated>
           <Image
             src={Vector14}
             alt=""
-            className="mt-0 md:mt-[19px] mb-[27px] md:w-[230px]"
+            className="mt-[60px] md:mt-[50px] mb-[27px] md:w-[230px]"
           />
-
+<Animated animationClass="animate-slidein500">
           <p className="text-center font-normal max-w-[300px] md:max-w-[950px] text-base md:text-[18px] md:leading-[30px] text-darkGray leading-[34px] mt-[15px] md:mt-[30px] mb-[36px] md:mb-[90px]">
             <span className="font-semibold">
               ¡Sabemos que llegar a Mendoza representa un gran esfuerzo y no
@@ -31,6 +36,8 @@ export default function RSVP() {
             <br />
             Si, además, queres ayudarnos con nuestra luna de miel:
           </p>
+          </Animated>
+          <Animated animationClass="animate-slidein700">
           <div className="md:flex md:w-full md:gap-x-[45px]">
           <div className="text-center text-offWhite w-full bg-mudGreen pt-[46px] md:pt-[30px] pb-[20px] rounded-tl-[30px] rounded-tr-[8px]  rounded-bl-[8px] mb-[53px] md:mb-0">
             <p className="font-rbeanie px-[40px] text-left md:text-center text-[50px] md:text-[56px] leading-[44px] md:leading-[57px] mb-[20px] md:mb-[20px]">Argentina</p>
@@ -52,6 +59,7 @@ export default function RSVP() {
             </ul>
           </div>
           </div>
+          </Animated>
         </div>
       </div>
 

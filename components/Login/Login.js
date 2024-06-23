@@ -10,9 +10,9 @@ const Login = ({ onLogin }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password === "password1") {
+    if (password === "jym01") {
       onLogin("full");
-    } else if (password === "password2") {
+    } else if (password === "jym02") {
       onLogin("limited");
     } else {
       setError("Contraseña incorrecta");
