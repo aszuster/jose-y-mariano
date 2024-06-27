@@ -218,7 +218,7 @@ export default function RecomMdz() {
                         <span className="font-semibold ">Casa Vigil</span>
                         <span className="hidden md:inline-block">:&nbsp;</span>
                         <br className="md:hidden" />
-                        Se puede hacer la degustación o comer. 
+                        Se puede hacer la degustación o comer
                       </p>
                     </li>
                     <li className="my-4">
@@ -227,7 +227,7 @@ export default function RecomMdz() {
                         <span className="hidden md:inline-block">:&nbsp;</span>
                         <br className="md:hidden" />
                         En Valle de Uco. Queda a una hora de Mendoza, pero una
-                        bodega realmente imponente. 
+                        bodega realmente imponente
                       </p>
                     </li>
                     <li className="my-4">
@@ -235,7 +235,7 @@ export default function RecomMdz() {
                         <span className="font-semibold ">Zuccardi</span>
                         <span className="hidden md:inline-block">:&nbsp;</span>
                         <br className="md:hidden" />
-                        En Valle de Uco. Almorzar en Piedra infinita.  
+                        En Valle de Uco. Almorzar en Piedra infinita
                       </p>
                     </li>
                     <li className="my-4">

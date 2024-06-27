@@ -29,7 +29,7 @@ export default function RecomBsAs() {
       content:
         "Palermo es el barrio mas grande de Buenos Aires y también uno de los mas caminables, con calles arboladas y donde se encuentran la mayoría de los locales de ropa y bares y restaurantes de moda. Se subdivide en Palermo Viejo, Palermo Alto, Palermo Chico, Palermo Soho y Palermo Hollywood.",
       content2:
-        "Jardín Japones, Museo Malba, Parque del Rosedal, Museo Nacional de Arte Decorativo, Floralis Genérica (escultura en movimiento al lado de la Facultad de Derecho, la cual también pueden visitar), Av. Libertador (enorme avenida), Bosques de Palermo, Palermo Soho, Palermo Chico (Av. Cervino)",
+        "Jardín Japones, Museo Malba, Parque del Rosedal, Museo Nacional de Arte Decorativo, Floralis Genérica (escultura en movimiento al lado de la Facultad de Derecho, la cual también pueden visitar), Av. Libertador (enorme avenida), Bosques de Palermo, Palermo Soho, Palermo Chico (Av. Cervino).",
     },
     {
       title: "Recoleta",
@@ -55,9 +55,9 @@ export default function RecomBsAs() {
     {
       title: "​Centro/Retiro/Puerto Madero",
       content:
-        "Retiro es hogar de varios edificios de importancia histórica y cerca de donde se ​encuentra la plaza de Mayo y la casa de gobierno. Puerto Madero es el barrio mas ​moderno de Buenos Aires, donde se encuentran las torres mas altas del país.",
+        "Retiro es hogar de varios edificios de importancia histórica y cerca de donde se ​encuentra la Plaza de Mayo y la Casa de Gobierno. Puerto Madero es el barrio mas ​moderno de Buenos Aires, donde se encuentran las torres mas altas del país.",
       content2:
-        "Torre Monumental, Edificio Kavanagh, Plaza San Martin, Teatro Colon (vale la pena visitar), Plaza de Mayo, Casa de Gobierno, Avenida 9 de Julio (la mas ancha del mundo!), Obelisco (donde se festejo la final del mundial), Puerto Madero, Puente de la Mujer.",
+        "Torre Monumental, Edificio Kavanagh, Plaza San Martin, Teatro Colon (vale la pena visitar), Plaza de Mayo, Casa de Gobierno, Avenida 9 de Julio (la mas ancha del mundo!), Obelisco (donde se festejó la final del mundial), Puerto Madero, Puente de la Mujer.",
     },
     {
       title: "La Boca",
@@ -99,7 +99,7 @@ export default function RecomBsAs() {
           <p className="text-base md:text-[18px] text-darkGray leading-[34px] md:leading-[30px] max-w-[300px] md:max-w-[700px] text-center mt-[20px] mb-[40px] md:mb-[10px]">
             Recomendamos hospedarse en los barrios de{" "}
             <span className="font-semibold">Palermo o Recoleta</span>, donde
-            encontrarán muy buenas opciones de hoteles y AirBNB.
+            encontrarán muy buenas opciones de hoteles y airbnb.
           </p>
           </Animated>
           <Image
@@ -385,7 +385,7 @@ export default function RecomBsAs() {
                           Paru Inkas Sushi & Grill
                         </span>
                         <br  />
-                        Comida Fusión Japonesa y Peruana, El favorito de Jose
+                        Comida Fusión Japonesa y Peruana - El favorito de Jose
                       </p>
                     </li>
                     <li className="my-5">

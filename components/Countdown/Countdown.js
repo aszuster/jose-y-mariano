@@ -44,7 +44,7 @@ const Countdown = ({ targetDate, className }) => {
   });
 
   return (
-    <div className={`font-montserrat h-screen bg-gray-900 text-mudGreen ${className}`}>
+    <div className={`font-montserrat bg-gray-900 text-mudGreen ${className}`}>
       <div className="text-6xl">
         {timerComponents.length ? 
         <div className='flex gap-x-[20px] md:gap-x-[50px]'>

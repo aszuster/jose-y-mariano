@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "../../components/header/Navbar";
 import Login from "../../components/Login/Login";
+import { AuthContext } from "../../contexts/AuthContext";
 
 const ClientNavbar = ({ children }) => {
   const [authStatus, setAuthStatus] = useState(null);
@@ -30,15 +31,19 @@ const ClientNavbar = ({ children }) => {
     return <div className="flex items-center justify-center h-screen bg-gray-100">Cargando...</div>;
   }
 
-  if (!authStatus) {
-    return <Login onLogin={handleLogin} />;
-  }
-
   return (
-    <>
-      <Navbar authStatus={authStatus} onLogout={handleLogout} />
-      {children}
-    </>
+    <AuthContext.Provider value={authStatus}>
+      {loading ? (
+        <div className="flex items-center justify-center h-screen bg-gray-100">Cargando...</div>
+      ) : authStatus ? (
+        <>
+          <Navbar authStatus={authStatus} onLogout={handleLogout} />
+          {children}
+        </>
+      ) : (
+        <Login onLogin={handleLogin} />
+      )}
+    </AuthContext.Provider>
   );
 };
 
