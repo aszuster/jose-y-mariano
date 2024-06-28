@@ -99,7 +99,7 @@ export default function RecomBsAs() {
           <p className="text-base md:text-[18px] text-darkGray leading-[34px] md:leading-[30px] max-w-[300px] md:max-w-[700px] text-center mt-[20px] mb-[40px] md:mb-[10px]">
             Recomendamos hospedarse en los barrios de{" "}
             <span className="font-semibold">Palermo o Recoleta</span>, donde
-            encontrarán muy buenas opciones de hoteles y airbnb.
+            encontrarán muy buenas opciones de hoteles y Airbnb.
           </p>
           </Animated>
           <Image

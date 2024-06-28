@@ -34,7 +34,7 @@ export default function RSVP() {
             )}
             {authStatus === "limited" && (
               <Link
-                href="https://docs.google.com/forms/d/1Y2-6J6Q07uakAsQAxRAHffMQhSjIN-WXxrezQ15zsig/edit"
+                href="https://docs.google.com/forms/d/1Y2-6J6Q07uakAsQAxRAHffMQhSjIN-WXxrezQ15zsig/prefill"
                 className="mt-[40px] md:mt-[50px] mb-[60px] md:mb-[50px]"
                 target="_blank"
               >
