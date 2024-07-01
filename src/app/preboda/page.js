@@ -58,7 +58,7 @@ export default function Preboda() {
           </p>
           </Animated>
           <Animated animationClass="animate-slidein500">
-          <Link href="#" target="_blank">
+          <Link href="/docs/Preboda_compressed.pdf" target="_blank">
             <p className="uppercase text-gray underline font-bold text-base md:text-[16px] tracking-[0.3em] md:tracking-[0.3em] transition-colors duration-300 ease-in-out hover:text-mudGreen">
               Ver ejemplos
             </p>
