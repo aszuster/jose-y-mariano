@@ -23,7 +23,7 @@ export default function RSVP() {
           <Animated animationClass="animate-slidein300">
             {authStatus === "full" && (
               <Link
-                href="https://docs.google.com/forms/d/1zZobO9vvdS6LK9TXcPDZMD_QR4v4qJeYPqxs1dMvDPk/prefill"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeXAVBmgPIhDLuVoA_n84uqEBFM8NNXWHtjYP54-e9KBGtCoA/viewform?usp=sf_link"
                 className="mt-[40px] md:mt-[50px] mb-[60px] md:mb-[50px]"
                 target="_blank"
               >
@@ -34,7 +34,7 @@ export default function RSVP() {
             )}
             {authStatus === "limited" && (
               <Link
-                href="https://docs.google.com/forms/d/1Y2-6J6Q07uakAsQAxRAHffMQhSjIN-WXxrezQ15zsig/prefill"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdmmnjtcZVvgPGQYI_q9tRTNhNWBQWiX8yRZHXPqx9QsIGs6g/viewform?usp=sf_link"
                 className="mt-[40px] md:mt-[50px] mb-[60px] md:mb-[50px]"
                 target="_blank"
               >
