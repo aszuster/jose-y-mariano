@@ -289,7 +289,7 @@ export default function RecomMdz() {
                     </li>
                     <li className="my-5 leading-[20px]">
                       .{" "}
-                      <Link href="https://argentinarafting.com/rafting-en-mendoza/" target="_blank" className="transition-text duration-300 ease-in-out hover:text-darkGray">
+                      <Link href="https://www.cabalgatasmendoza.com/" target="_blank" className="transition-text duration-300 ease-in-out hover:text-darkGray">
                         <span className="font-semibold">
                           Cabalgata y asado{" "}
                         </span>
