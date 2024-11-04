@@ -67,8 +67,9 @@ export default function Preboda() {
           <Image src={Vector17} alt="" className="mt-[43px] mb-[55px] lg:absolute lg:bottom-[-100px] lg:right-0 lg:w-[342px]" />
         </div>
       </div>
+      <div className="w-full">
       <Animated animationClass="animate-slidein700">
-      <div className="w-full max-w-md max-w-[90%] pb-[56px] md:max-w-[950px] lg:mt-[130px] md:h-[330px]">
+      <div className="w-full max-w-[90%] mx-auto pb-[56px] md:max-w-[950px] lg:mt-[130px] md:h-[330px]">
         <div className="flex justify-center border-b border-mudGreen max-w-[90%] mx-auto">
           <button
             className={`px-[15px] md:px-[30px] py-[10px] md:py-[17px] uppercase text-[10px] md:text-[18px] tracking-[0.5em] transition-all duration-300 ease-in-out  ${
@@ -117,6 +118,7 @@ export default function Preboda() {
         </div>
       </div>
       </Animated>
+      </div>
       <div className="bg-mudGreen text-white w-full py-[38px]">
         <div className="flex flex-col items-center mx-auto max-w-[90%]">
           <Image src={Firma} alt="" className="mb-[30px] md:mb-[36px] md:w-[160px]" />

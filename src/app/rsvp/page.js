@@ -59,20 +59,22 @@ export default function RSVP() {
               Si, además, queres ayudarnos con nuestra luna de miel:
             </p>
           </Animated>
-          <Animated animationClass="animate-slidein700">
+          <div className="w-full">
+          <Animated animationClass="animate-slidein700" >
             <div className="md:flex md:w-full md:gap-x-[45px]">
-              <div className="text-center text-offWhite w-full bg-mudGreen pt-[46px] md:pt-[30px] pb-[20px] rounded-tl-[30px] rounded-tr-[8px]  rounded-bl-[8px] mb-[53px] md:mb-0">
+              <div className="basis-1/2 text-center text-offWhite w-full bg-mudGreen pt-[46px] md:pt-[30px] pb-[20px] rounded-tl-[30px] rounded-tr-[8px]  rounded-bl-[8px] mb-[53px] md:mb-0">
                 <p className="font-rbeanie px-[40px] text-left md:text-center text-[50px] md:text-[56px] leading-[44px] md:leading-[57px] mb-[20px] md:mb-[20px]">
                   Argentina
                 </p>
                 <ul className="px-[40px] text-left md:text-center text-[16px] md:text-[18px] leading-[18px] md:leading-[20px]">
                   Banco Santander
+                  <li className="my-5">. Cuenta en pesos y dólares</li>
                   <li className="my-5">. Cuenta 718-362003/2</li>
                   <li className="my-5">. CBU: 0720718388000036200322</li>
                   <li className="my-5">. Alias: joseymariano</li>
                 </ul>
               </div>
-              <div className="text-center text-offWhite w-full bg-mudGreen pt-[46px] md:pt-[30px] pb-[20px] rounded-tl-[30px] rounded-tr-[8px]  rounded-bl-[8px]">
+              <div className="basis-1/2 text-center text-offWhite w-full bg-mudGreen pt-[46px] md:pt-[30px] pb-[20px] rounded-tl-[30px] rounded-tr-[8px]  rounded-bl-[8px]">
                 <p className="font-rbeanie px-[40px] text-left md:text-center text-[50px] md:text-[56px] leading-[44px] md:leading-[57px] mb-[20px] md:mb-[20px]">
                   USA
                 </p>
@@ -86,6 +88,7 @@ export default function RSVP() {
               </div>
             </div>
           </Animated>
+          </div>
         </div>
       </div>
 

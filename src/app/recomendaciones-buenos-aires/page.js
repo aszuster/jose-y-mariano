@@ -121,7 +121,7 @@ export default function RecomBsAs() {
           </p>
           </Animated>
         </div>
-        <div className="w-full md:px-0 w-full">
+        <div className="md:px-0 w-full">
         <Animated animationClass="animate-slidein100">
       <div className="mx-auto w-full md:max-w-[720px] lg:max-w-[950px] space-y-2">
         {accordionItems.map((item, index) => (
@@ -176,8 +176,9 @@ export default function RecomBsAs() {
             Aires, debajo les incluimos igualmente algunas recomendaciones.
           </p>
           </Animated>
+          <div className="w-full">
           <Animated animationClass="animate-slidein500">
-          <div className="w-full max-w-md max-w-[90%] md:max-w-[950px]">
+          <div className="w-full max-w-[90%] mx-auto md:max-w-[950px]">
             <div className="flex justify-center border-b border-offWhite">
               <button
                 className={`px-[15px] md:px-[30px] py-[10px] md:py-[18px] uppercase text-[10px] md:text-[18px] md:leading-[18px] tracking-[0.5em]  transition-all duration-300 ease-in-out ${
@@ -592,6 +593,7 @@ y fácil de conseguir reserva */}
             </div>
           </div>
           </Animated>
+          </div>
           <Image
             src={Vector21White}
             alt=""
